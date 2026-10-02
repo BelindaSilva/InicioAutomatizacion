@@ -26,8 +26,8 @@ public class HomeAmazonStep {
   @BeforeTest
     public void setUp(){
 
-      WebDriverManager.chromiumdriver().setup();
-      System.setProperty("flor.webdriver.chrome.driver", "/src/test/recursos/chromedriver.exe" );
+      WebDriverManager.chromedriver().setup();
+
       ChromeOptions options= new ChromeOptions();
       Logger logger = Logger.getLogger("HHH");
       options.addArguments("--remote-allow-origins=*");
