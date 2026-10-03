@@ -61,7 +61,7 @@ public class IdentificacionStep {
     public void ingresodecelular(){
 
       webElement=webdriver.findElement(By.name("email"));
-      webElement.sendKeys("+51921666757");
+      webElement.sendKeys("+519216667**");
 
       webElement=webdriver.findElement(By.xpath("//*[@id=\"continue\"]"));
       webElement.click();
@@ -74,7 +74,7 @@ public class IdentificacionStep {
     public  void ingresodeclave(){
 
 
-        webdriver.findElement(By.id("ap_password")).sendKeys("florBelinda2626");
+        webdriver.findElement(By.id("ap_password")).sendKeys("****");
 
 
         webdriver.findElement(By.id("signInSubmit")).click();
