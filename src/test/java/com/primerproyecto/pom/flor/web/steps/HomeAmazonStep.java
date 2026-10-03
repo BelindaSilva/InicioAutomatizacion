@@ -98,21 +98,19 @@ public class HomeAmazonStep {
     }
 
 
- @Test
-  public String captureDeliverTo() {
+    @Test
+    public String captureDeliverTo() {
 
 
-     webElement = webdriver.findElement(By.id("glow-ingress-line2"));
-     String nombre = webElement.getText();
+        webElement = webdriver.findElement(By.id("glow-ingress-line2"));
+        String nombre = webElement.getText();
 
 
-     return nombre;
+        return nombre;
+    }
 
 
- }
-
-
- // Evento click y obtener un Lista de los idiomas
+    // Evento click y obtener un Lista de los idiomas
     @Test
     public void ListarIdiomas() {
 
@@ -152,12 +150,12 @@ public class HomeAmazonStep {
     @Test
     public void TecladoTAB(){
 
-      WebElement LogoAmazon=webdriver.findElement(By.id("nav-logo-sprites"));
+        WebElement LogoAmazon=webdriver.findElement(By.id("nav-logo-sprites"));
         LogoAmazon.sendKeys(Keys.TAB);
 
 
-      //La web no genera alterta al hacer TAB, por eso no se va mostrar ninguna alerta
-      //Alert alerta= webdriver.switchTo().alert();
+        //La web no genera alterta al hacer TAB, por eso no se va mostrar ninguna alerta
+        //Alert alerta= webdriver.switchTo().alert();
 
     }
 
@@ -167,14 +165,14 @@ public class HomeAmazonStep {
     @AfterEach
     public void tearDown(){
 
-         webdriver.manage().window().minimize();
+        webdriver.manage().window().minimize();
 
         //Dimension dimension = new Dimension(1200,500);
         //webdriver.manage().window().setSize(dimension);
 
 
         webdriver.close();//Metodo que cierra el navegador
-       // webdriver.quit();//Metodo que cierra todos los navegadores
+        // webdriver.quit();//Metodo que cierra todos los navegadores
 
     }
 
