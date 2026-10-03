@@ -1,7 +1,7 @@
 package com.primerproyecto.pom.flor.web.steps;
 
 import org.apache.commons.io.FileUtils;
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.*;
@@ -31,7 +31,7 @@ public class PeruRailStep {
         webdriver.get("https://book.perurail.com/"); //Metodo que navega en la web indicada
 
 
-        Assert.assertEquals( webdriver.getTitle(), "PERURAIL - ¡Machu Picchu te espera!");
+        Assertions.assertEquals( webdriver.getTitle(), "PERURAIL - ¡Machu Picchu te espera!");
 
 
 

@@ -1,7 +1,7 @@
 package com.primerproyecto.pom.flor.web.steps;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +21,7 @@ public class SunatStep {
 
 
  //Silumacion de  abrir pagina en una nueva ventana
-  @Before
+  @BeforeEach
   public  void AbrirPaginaEnOtraVentana(){
 
     System.setProperty("flor.webdriver.chrome.driver", "/src/test/recursos/chromedriver.exe" );

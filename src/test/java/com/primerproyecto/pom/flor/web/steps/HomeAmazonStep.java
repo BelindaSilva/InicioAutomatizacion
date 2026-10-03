@@ -3,6 +3,7 @@ package com.primerproyecto.pom.flor.web.steps;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -10,7 +11,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.BeforeTest;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -23,7 +23,7 @@ public class HomeAmazonStep {
     private WebElement webElement;
 
 
-  @BeforeTest
+    @BeforeEach
     public void setUp(){
 
       WebDriverManager.chromedriver().setup();
